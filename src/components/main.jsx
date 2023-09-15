@@ -129,8 +129,8 @@ const Main = () => {
 
     <div className="section-card">
         <div className="heading flexSB">
-            <h2>See Results</h2>
-            <a href="">See More</a>
+            <div><h2>See Results</h2></div>
+            <div><a href="">See More</a></div>
         </div>
         <div className="MovieContainer">
             {
