@@ -1,0 +1,284 @@
+
+header{
+    height: 10vh;
+    line-height: 10vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    color: #fff;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .logo h1{
+    width: 150px;
+    margin: auto;
+  }
+  
+  .flexSB{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header i{
+    quotes: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 10px;
+  }
+
+  button a{
+    color: #fff;
+  }
+
+  ul li{
+    display: inline-block;
+    margin: auto 20px;
+  }
+
+  ul li a{
+    color: #fff;
+  }
+  
+  .container{
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 12px 10px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  input{
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  
+  /* section */
+  
+  .home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:  100vh;
+    width: 100%;
+    color: #fff;
+  } 
+  
+  .homeContainer{
+    position: relative;
+  }
+  
+  .coverImage{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .coverImage img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .content{
+    padding: 7%;
+    margin-left: 4%;
+    color: #fff;
+  }
+  
+  .details h1{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    width: 330px;
+  }
+  
+  .coverImage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 88;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    ;
+  }
+  
+  .content .rating{
+    margin: 20px 0;
+  }
+  
+  .rating i{
+    margin-right: 10px;
+  }
+  
+  .rate{
+    margin-right: 150px;
+  }
+  
+  p{
+    margin-top: 10px;
+    width: 280px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .primary-btn{
+    background-color: red;
+    border-radius: 4px;
+    box-shadow: 1px black;
+  }
+  
+  .MovieContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .notfound{
+    font-size: 40px;
+    text-align: center;
+  }
+
+
+  #footer{
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .last a{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .copyright{
+    margin: 20px auto 50px;
+  }
+
+  .copyright p{
+    text-align: center;
+    width: 100%;
+  }
+
+
+  
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+
+  
+  .box{
+    margin-bottom: 260px;
+  }
+
+  .heading{
+    margin-bottom: 30px;
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 409px) {
+
+  
+  .box{
+    margin-bottom: 270px;
+  }
+
+  .heading{
+    margin-bottom: 30px;
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 379px) {
+ 
+  .details h1{
+    font-size: 2rem;
+  }
+  
+  .box{
+    margin-bottom: 220px;
+  }
+
+  .heading{
+    margin-bottom: 30px;
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1150px) {
+
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 810px) {
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+
+  .box{
+    margin-bottom: 550px;
+  }
+}
+  
+@media only screen and (min-width: 811px) and (max-width: 1000px) {
+  .nav-link{
+    display: none;
+  }
+
+  .search-btn{
+    display: none;
+  }
+
+  .box{
+    margin-bottom: 450px;
+  }
+}

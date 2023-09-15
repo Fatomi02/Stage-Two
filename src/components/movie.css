@@ -1,0 +1,16 @@
+.movie-poster{
+    text-align: center;
+}
+
+
+.img2 img{
+    height: 500px;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.overview p{
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}

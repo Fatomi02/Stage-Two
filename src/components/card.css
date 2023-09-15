@@ -1,0 +1,88 @@
+.rate2{
+    margin-right: 50%;
+}
+h4{
+    margin-top: 8px;
+}
+h3{
+    margin-top: 8px;
+}
+
+.text{
+    padding: 3px;
+}
+
+.img{
+    height: 350px;
+}
+
+a{
+    color: black;
+}
+
+.section-card{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+.MovieBox{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.5s;
+  }
+  .MovieBox:hover {
+    cursor: pointer;
+    border-left: 5px solid red;
+    transform: scale3d(1.1, 1.1, 1) translate3d(3%, 0, 0) perspective(31.25em);
+    box-shadow: 0 0 0.73em rgba(0, 0, 0, 0.9);
+  }
+
+  .MovieBox::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 300px;
+    z-index: -1;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(83, 100, 141, 0), 100%);
+    ;
+  }
+
+  .MovieBox img{
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .MovieBox text {
+    padding: 40px 50px;
+  }
+
+  .MovieBox h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .MovieBox button{
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-style: 13px;
+    cursor: pointer;
+  }
+
+
+  .rate2{
+    margin-right: 100px;
+  }
+
+
