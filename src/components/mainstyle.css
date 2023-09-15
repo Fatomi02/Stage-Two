@@ -47,7 +47,16 @@ h2{
   ul li a{
     color: #fff;
   }
-  
+
+.heading{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
   .container{
     text-align: center;
     display: flex;
