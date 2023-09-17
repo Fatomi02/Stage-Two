@@ -18,7 +18,8 @@ const Main = () => {
     const [movieData, setData] = useState([]);
     const [url_set, setUrl] = useState(url);
     const [search,setSearch]= useState();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
 
     useEffect(()=> {
         fetch(url_set).then(res=> res.json()).then(data=> {
@@ -27,9 +28,10 @@ const Main = () => {
         })
     }, [url_set])
 
+
     const handleOnClick = (res,pos) => {
         localStorage.setItem("movie-data", JSON.stringify(res))
-        navigate(`/home/${pos}`)
+        navigate(`/movie/${pos}`)
     }
 
     const getData=(movieType)=>{
@@ -129,12 +131,14 @@ const Main = () => {
 
     <div className="section-card">
         <div className="heading flexSB">
-            <div><h2>See Results</h2></div>
-            <div><a href="">See More</a></div>
+            <h2>See Results</h2>
+            <a href="">See More</a>
         </div>
         <div className="MovieContainer">
+
             {
-                (movieData.length == 0)? <p className="notfound">Not Found</p>: movieData.map((res,pos)=>{
+               
+                (movieData.length == 0)? <p className="notfound">Not Found</p>: movieData.splice(0, 10).map((res,pos)=>{
                     return (
                         <Card onClick={() => handleOnClick(res,pos)}  movie={res} key={pos} />
    
